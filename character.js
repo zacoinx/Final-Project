@@ -1,5 +1,5 @@
 
-class Character {
+export default class Character {
 
   constructor() {
     this.x = 180;
