@@ -13,11 +13,16 @@ const gameState = {
 
 let currentGameState = gameState.intro;
 
-const gameCharacter = new Character(100, 300, 100, 100);
+const gameCharacter = new Character(180, 400, 40, 45, 0);
 
 function draw () {
-
     background("grey");
+    gameCharacter.move();
+    gameCharacter.design();
+}
 
-
+function keyPressed() {
+    if (key === ' ') {
+        gameCharacter.jump();
+    }
 }
